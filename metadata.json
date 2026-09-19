@@ -1,0 +1,6 @@
+{
+  "name": "Divine Motors",
+  "description": "Premium Car Repair, Accessories & Designer Automotive Solutions in Nikol, Ahmedabad. Precision car care, ambient lighting, Android systems, and bespoke styling under one roof.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

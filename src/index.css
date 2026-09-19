@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Syne', sans-serif;
+    --font-tech: 'Chakra Petch', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #04060a;
+    color: #f1f5f9;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-tech {
+    font-family: var(--font-tech);
+  }
+}
+
+/* Subtle luxury carbon fiber and radial light pattern */
+.carbon-grid {
+  background-image: 
+    radial-gradient(rgba(0, 180, 255, 0.08) 1px, transparent 0),
+    linear-gradient(to bottom, rgba(4, 6, 10, 0.95), rgba(5, 8, 14, 0.98));
+  background-size: 32px 32px, 100% 100%;
+}
+
+.luxury-glass {
+  background: rgba(10, 15, 24, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.luxury-glass-hover:hover {
+  background: rgba(14, 21, 35, 0.85);
+  border-color: rgba(0, 195, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0, 180, 255, 0.15);
+}
+
+.neon-border-blue {
+  border: 1px solid rgba(0, 212, 255, 0.45);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.25), inset 0 0 15px rgba(0, 212, 255, 0.1);
+}
+
+.neon-text-glow {
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+.neon-gold-glow {
+  text-shadow: 0 0 18px rgba(234, 179, 8, 0.5);
+}
+
+/* Chrome metallic text */
+.chrome-text {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 40%, #00e5ff 75%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chrome-silver-text {
+  background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #04060a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Smooth hide scrollbar helper */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
